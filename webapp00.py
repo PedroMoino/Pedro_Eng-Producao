@@ -5,6 +5,8 @@ url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmY_1OWILiyWjV8MKdZsbZNc
 db = Ler_GooglePlanilha(url)    
 Escrever(db)
 
+
+
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("MEU 1º WEB APP STREAMLIT")
 
