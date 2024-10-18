@@ -1,11 +1,16 @@
 # MEU PRIMEIRO WEB APP
 import streamlit as st
 from ACTlib01 import *
-url = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vTmY_1OWILiyWjV8MKdZsbZNcGnZS1tjQ0aYcc6i6m6AwbPpM7bNRsrfS4NXN5SFeErUL6wqIft6Q9M/pub?gid=1741549475&single=true&output=csv")
+url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmY_1OWILiyWjV8MKdZsbZNcGnZS1tjQ0aYcc6i6m6AwbPpM7bNRsrfS4NXN5SFeErUL6wqIft6Q9M/pub?gid=1741549475&single=true&output=csv"
 db = Ler_GooglePlanilha(url)    
 Escrever(db)
-
-
+Configurar_Pagina("Exemplo 1", 
+                    "amplo", 
+                    "auto", 
+                    "https://docs.streamlit.io", 
+                    "mailto:informacoes.actsp@gmail.com", 
+                    "ACT - Soluções para Pessoas. Você pode usar formatação Markdown para adicionar informações neste espaço. Para mais informações acesse *https://www.markdownguide.org*",
+                    "©️")
 
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("MEU 1º WEB APP STREAMLIT")
